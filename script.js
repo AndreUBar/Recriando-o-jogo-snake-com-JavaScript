@@ -21,6 +21,15 @@ function criarSnake() {
     }
 }
 
+document.addEventListener('keydown', update);
+
+function upadate(event) {
+    if (event.Keycode == 37 && direction != "right") direction = "left";
+    if (event.Keycode == 38 && direction != "down") direction = "up";
+    if (event.Keycode == 39 && direction != "left") direction = "right";
+    if (event.Keycode == 40 && direction != "up") direction = "down";
+}
+
 function iniciarjogo() {
     criarBG();
     criarSnake();
