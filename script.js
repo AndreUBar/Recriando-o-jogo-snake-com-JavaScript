@@ -21,7 +21,7 @@ function criarSnake() {
     }
 }
 
-document.addEventListener('keydown', update);
+document.addEventListener('keydown', upadate);
 
 function upadate(event) {
     if (event.Keycode == 37 && direction != "right") direction = "left";
@@ -31,6 +31,7 @@ function upadate(event) {
 }
 
 function iniciarjogo() {
+
     criarBG();
     criarSnake();
 
